@@ -76,13 +76,13 @@ All processed images are saved in the `output/` directory:
 <img src="input_images/3.jpg" alt="Image Input">
 
 ###### Canny Threshold
-<img src="output_images/canny_thresholds_overlap(option1).png" alt="Canny Threshold">
+<img src="output/canny_thresholds_overlap(option1).png" alt="Canny Threshold">
 
 ###### Hough circled output image
-<img src="output_images/hough_coins_detected_overlap.png" alt="Hough circled output image">
+<img src="output/hough_coins_detected_overlap.png" alt="Hough circled output image">
 
 ###### Segmented Image 
-<img src="output_images/segmented_coins_overlap.png" alt="Segmented Image">
+<img src="output/segmented_coins_overlap.png" alt="Segmented Image">
 
 
 ###### NON OVERLAP(Default)
@@ -91,13 +91,13 @@ All processed images are saved in the `output/` directory:
 <img src="input_images/1.jpg" alt="Image Input">
 
 ###### Canny Threshold
-<img src="output_images/canny_thresholds.png" alt="Canny Threshold">
+<img src="output/canny_thresholds.png" alt="Canny Threshold">
 
 ###### Hough circled output image
-<img src="output_images/hough_coins_detected.png" alt="Hough circled output image">
+<img src="output/hough_coins_detected.png" alt="Hough circled output image">
 
 ###### Segmented Coins
-<img src="output_images/segmented_coins.png" alt="Segmented Coins">
+<img src="output/segmented_coins.png" alt="Segmented Coins">
 
 ## Usage
 ### Running the Script
