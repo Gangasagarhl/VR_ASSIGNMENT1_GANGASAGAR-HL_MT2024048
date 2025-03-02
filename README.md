@@ -24,10 +24,6 @@ python3 coin_detection_segmentation.py input_images/name_of_image
 python3 panorama.py  list_of_image_paths seperated by gap
 ```
 
-
-
-
-
 # Coin Detection and Segmentation using Canny Edge Detection and Hough Transform
 
 ## Overview
@@ -77,32 +73,31 @@ All processed images are saved in the `output/` directory:
 
 ##### OVERLAP(Option 1)
 ###### Image Input
-![Alt Text][input_images/3.jpg]
+<img src="input_images/3.jpg" alt="Image Input">
 
 ###### Canny Threshold
-![Alt Text][output_images/canny_thresholds_overlap(option1).png]
+<img src="output_images/canny_thresholds_overlap(option1).png" alt="Canny Threshold">
 
 ###### Hough circled output image
-![Alt Text][output_images/hough_coins_detected_overlap.png]
+<img src="output_images/hough_coins_detected_overlap.png" alt="Hough circled output image">
 
 ###### Segmented Image 
-![Alt Text][output_images/segmented_coins_overlap.png]
-
+<img src="output_images/segmented_coins_overlap.png" alt="Segmented Image">
 
 
 ###### NON OVERLAP(Default)
 
 ###### Image Input
-![Alt Text][input_images/1.jpg]
+<img src="input_images/1.jpg" alt="Image Input">
+
 ###### Canny Threshold
-![Alt Text][output_images/canny_thresholds.png]
+<img src="output_images/canny_thresholds.png" alt="Canny Threshold">
+
 ###### Hough circled output image
-![Alt Text][output_images/hough_coins_detected.png]
+<img src="output_images/hough_coins_detected.png" alt="Hough circled output image">
 
 ###### Segmented Coins
-![Alt Text][output_images/segmented_coins.png]
-
-
+<img src="output_images/segmented_coins.png" alt="Segmented Coins">
 
 ## Usage
 ### Running the Script
@@ -114,21 +109,6 @@ python coin_detection.py path/to/image.jpg
 - **Testing Mode (Option 1):** Prompts the user for manual threshold values.
 - **Default Mode:** Uses predefined hyperparameters (works well for non-overlapping coins).
 
-### Dependencies
-Ensure you have the following installed:
-```bash
-pip install opencv-python matplotlib numpy
-```
-
-
-
-
-
-
-
-
-
-
 
 
 # Panorama Stitching
@@ -139,11 +119,10 @@ This project performs image stitching to generate a panorama from multiple image
 
 ### Load the Images
 #### `load_image_sequence(image_paths)`
-![Alt Text][input_images/pan1.jpeg]
-![Alt Text][input_images/pan2.jpeg]
-![Alt Text][input_images/pan3.jpeg]
-![Alt Text][input_images/pan4.jpeg]
-
+<img src="input_images/pan1.jpeg" alt="pan1">
+<img src="input_images/pan2.jpeg" alt="pan2">
+<img src="input_images/pan3.jpeg" alt="pan3">
+<img src="input_images/pan4.jpeg" alt="pan4">
 
 ### Convert Images to Grayscale
 #### `grayscale_conversion(image)`
@@ -169,43 +148,14 @@ Uses the homography matrix to warp the second image onto the first and blends ov
 #### `stitch_two_images(first_image, second_image)`
 Calls all previous functions and generates a stitched panorama of two images.
 
-### Stitch Multiple Images (Recursively)
-#### `stitch_multiple_images(image_list, num_images)`
-Recursively stitches multiple images into a single panorama.
-
 ### Save the Final Panorama
 #### `create_panorama(image_paths)`
 Calls the stitching process and saves the output as `panorama_result.jpg`.
 
-## Usage
-1. Provide image paths as input.
-2. The functions will process the images step-by-step.
-3. The final panorama will be saved as `panorama_result.jpg`.
-
-## Dependencies
-- OpenCV
-- NumPy
-
-
-## Example
-```python
-image_paths = [
-    "input_images/pan1.jpeg",
-    "input_images/pan2.jpeg",
-    "input_images/pan3.jpeg",
-    "input_images/pan4.jpeg"
-]
-
-create_panorama(image_paths)
-```
-
 ## RESULTS 
 ### MATCHING VISUALS
-![Alt Text][output/matches_visual.jpg]
+<img src="output/matches_visual.jpg" alt="Matching Visuals">
 
 ### PANORAMA OUTPUT
-![Alt Text][output/panorama_result.jpg]
-
-
-
+<img src="output/panorama_result.jpg" alt="Panorama Output">
 
