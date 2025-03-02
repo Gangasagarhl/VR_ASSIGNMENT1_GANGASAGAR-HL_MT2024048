@@ -102,7 +102,7 @@ All processed images are saved in the `output/` directory:
 ## Usage
 ### Running the Script
 ```bash
-python coin_detection.py path/to/image.jpg
+python coin_detection_segmentation.py path/to/image.jpg
 ```
 
 ### Modes of Execution
